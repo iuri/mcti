@@ -1,0 +1,131 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="3r2;U]Er(OfQ~v+_CW*$">n</variable>
+  </variables>
+  <block type="procedures_defreturn" id="v9[,FDFpGn@0hF(Nn[i;" x="210" y="10">
+    <mutation>
+      <arg name="n" varid="3r2;U]Er(OfQ~v+_CW*$"></arg>
+    </mutation>
+    <field name="NAME">fatorial</field>
+    <comment pinned="false" h="80" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block type="procedures_ifreturn" id="vZmo+DY%QdnSZPnsp+!M">
+        <mutation value="1"></mutation>
+        <value name="CONDITION">
+          <block type="logic_compare" id="2x9UFB|oL1/[#)?0#^zr">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="variables_get" id="4}JK~%xffxCO3@E/zyv@">
+                <field name="VAR" id="3r2;U]Er(OfQ~v+_CW*$">n</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="!f+AH@D`lV+NcoNn7hjE">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE">
+          <block type="math_number" id="Mq/N(bN.od:v7Pgq17gj">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="$D:e]-#qxsoiUevuZ-.J">
+        <field name="OP">MULTIPLY</field>
+        <value name="A">
+          <shadow type="math_number" id="F1e]1ZyjaF(BWx9#Ho]F">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id=",Ay]NPY#3dfHyEylmiBh">
+            <field name="VAR" id="3r2;U]Er(OfQ~v+_CW*$">n</field>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="I*B/6W@b`9#{1Q`#.A.*">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="procedures_callreturn" id="CkiPq]X=_h$GlWIa)_oZ">
+            <mutation name="fatorial">
+              <arg name="n"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_arithmetic" id="hN|t{*(5#)4tif7:kn+m">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="5[|,tlTUmTCc)%74m@Rf">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id=".MyQ*sbt5OvtJ*zE}q@b">
+                    <field name="VAR" id="3r2;U]Er(OfQ~v+_CW*$">n</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="cHEzTL?(gA!*5=f=ySB}">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="variables_set" id="ykKJ(}lgi}Sf@{]~pu^X" x="210" y="170">
+    <field name="VAR" id="3r2;U]Er(OfQ~v+_CW*$">n</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="$y,v2tjbn+zuq;;GOh,s">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id=",?]4Eg3yvU0Q05u5+cn4">
+            <field name="TEXT">Insira um numero</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="9dq=-=D4K1bf7Z?3xvY7">
+        <value name="TEXT">
+          <shadow type="text" id="3A0`QX-zD%:3[FF+X+#^">
+            <field name="TEXT">Fatorial de </field>
+          </shadow>
+          <block type="text_join" id="@=gNgUXHXIfxL.D~G_xB">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="tnK|GKX5wGtyIZP7f|:1">
+                <field name="TEXT">Fatorial de </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="variables_get" id="IWcO(BM2:.#?R(b?}59J">
+                <field name="VAR" id="3r2;U]Er(OfQ~v+_CW*$">n</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="wVQ(lPygihT?p9K[36i(">
+                <field name="TEXT">: </field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="procedures_callreturn" id="^DF,)wVStW;yuqtrqC~1">
+                <mutation name="fatorial">
+                  <arg name="n"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="variables_get" id="%DRgWLe_0%`QdQTK}(xa">
+                    <field name="VAR" id="3r2;U]Er(OfQ~v+_CW*$">n</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

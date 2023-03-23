@@ -1,0 +1,68 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="frtvoJPk?^xvm:iHn{9)">numeros</variable>
+    <variable id="VT8(2KQ;+,6$:^l9!IyW">i</variable>
+  </variables>
+  <block type="variables_set" id="7A6#vl|c3tGO}g$t6lpT" x="170" y="-450">
+    <field name="VAR" id="frtvoJPk?^xvm:iHn{9)">numeros</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="tv;g_?$pa$Hq3H=jM+%%">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+    <next>
+      <block type="controls_for" id="#?xcET;6i+(quh=0,Y]=">
+        <field name="VAR" id="VT8(2KQ;+,6$:^l9!IyW">i</field>
+        <value name="FROM">
+          <shadow type="math_number" id="W1,k5viDAnFkx9ZycL{4">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number" id="7~i:UakS0_P:=FIC9lfa">
+            <field name="NUM">99</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="f=Q5Hh,5bH*.`MR~gkn|">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="lists_setIndex" id="AOmN,I{0UWpno6{sL+}0">
+            <mutation at="true"></mutation>
+            <field name="MODE">SET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="LIST">
+              <block type="variables_get" id="lp|EyRH#Vt]M*_(3-06(">
+                <field name="VAR" id="frtvoJPk?^xvm:iHn{9)">numeros</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="variables_get" id=",?-jwthWiv.j8EN^pFLZ">
+                <field name="VAR" id="VT8(2KQ;+,6$:^l9!IyW">i</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="variables_get" id="d7)t5-*L=K2gT{X,=0m(">
+                <field name="VAR" id="VT8(2KQ;+,6$:^l9!IyW">i</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="text_print" id="hehWyY4tDLG}no.pUfzK">
+            <value name="TEXT">
+              <shadow type="text" id="ysYH/+S=}T#T}0~CwOqi">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="variables_get" id="^tyn7gDF|D9z{boCXG?n">
+                <field name="VAR" id="frtvoJPk?^xvm:iHn{9)">numeros</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

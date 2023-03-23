@@ -1,0 +1,113 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="O|=;VZKzSE5E-w|~yBl*">notas</variable>
+    <variable id="op39zO?qC)tijM#:$O8D">i</variable>
+  </variables>
+  <block type="variables_set" id=":1z*a;]WJamA5mLxDiB9" x="143" y="-528">
+    <field name="VAR" id="O|=;VZKzSE5E-w|~yBl*">notas</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id=")09L`B#4OmAVti[B(Jb^">
+        <mutation items="3"></mutation>
+        <value name="ADD0">
+          <block type="math_number" id="@d-RS[p]m,a4^c#D398Y">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="math_number" id="x^8^%jo]aq:o57JB+ol@">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="math_number" id="EyoHtp*)RXwa`.yZHdzJ">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="controls_for" id="(Z*~i!oH.Y@5gkTIV?WY">
+        <field name="VAR" id="op39zO?qC)tijM#:$O8D">i</field>
+        <value name="FROM">
+          <shadow type="math_number" id="Ipm;CgTbDIbGZnoOx=Bp">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number" id="J4F)qu#;$U`MG%-D=Zup">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="o[ImlFS#(hN6Se-1GDvU">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="lists_setIndex" id="vhHj@vx4%0(u/%z}N|UG">
+            <mutation at="true"></mutation>
+            <field name="MODE">SET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="LIST">
+              <block type="variables_get" id="hBa5#sq+]J-Q!@0RJVI,">
+                <field name="VAR" id="O|=;VZKzSE5E-w|~yBl*">notas</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="variables_get" id="~EO;NV*/pkmQ+m!vEktb">
+                <field name="VAR" id="op39zO?qC)tijM#:$O8D">i</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="text_prompt_ext" id="_?dxfqu_0N-a=+m.Rr/2">
+                <mutation type="NUMBER"></mutation>
+                <field name="TYPE">NUMBER</field>
+                <value name="TEXT">
+                  <shadow type="text" id="8x1~VdhrXhkYDO?mVb;p">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="text_join" id="Qz8F=2*TUA%|%!;?):ku">
+                    <mutation items="3"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="6aQ2kw0UWzpUF=?A~0J!">
+                        <field name="TEXT">Insira a nota </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="variables_get" id="4-s@h*F@;swh`fk5m4MZ">
+                        <field name="VAR" id="op39zO?qC)tijM#:$O8D">i</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="text" id="Tha~TL~3xyj,v`cbiPT0">
+                        <field name="TEXT"> : </field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="text_print" id="_O1ma)0,;l[H|FU2yejp">
+            <value name="TEXT">
+              <shadow type="text" id="Y;@|8[aK)iEPE}*2F*{8">
+                <field name="TEXT">I</field>
+              </shadow>
+              <block type="math_on_list" id="#]pt8a}l}=cl{xbKJ@fV">
+                <mutation op="AVERAGE"></mutation>
+                <field name="OP">AVERAGE</field>
+                <value name="LIST">
+                  <block type="variables_get" id="d`n0HYU}7KQ|QR__n!%A">
+                    <field name="VAR" id="O|=;VZKzSE5E-w|~yBl*">notas</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,194 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="V1]JFQ}u2lILoK[r#K}e">bruto</variable>
+    <variable id="v[py$kxoP;APHo%8U|z_">inss</variable>
+  </variables>
+  <block type="variables_set" id="3fb21E`FoJaZ,[F;w;U8" x="-630" y="-490">
+    <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="C|+0yhRs+;HQj(Vn|:B0">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="|utIyv{^`3.sLZo^4z1}">
+            <field name="TEXT">Insira o salario bruto</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="controls_if" id="kIG2]T-(62-sE^Mg9zy-">
+        <mutation elseif="2"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id=".UU6.^96+FFnSb(/($//">
+            <field name="OP">LTE</field>
+            <value name="A">
+              <block type="variables_get" id="3lzQ2W.MWBfrv0lr;r2+">
+                <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="Em@ulk=ym%X8[JwSfUoT">
+                <field name="NUM">1693.72</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="d3D~:wxN;=-PNL|H7T1G">
+            <field name="VAR" id="v[py$kxoP;APHo%8U|z_">inss</field>
+            <value name="VALUE">
+              <block type="math_number" id="p??|)%8u!UGB=Aa+4C(h">
+                <field name="NUM">8</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_operation" id="LI,qnr}4oQ;enn9w%I[{">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="|9msXhftq)Y2MBh,Xa;6">
+                <field name="OP">GTE</field>
+                <value name="A">
+                  <block type="variables_get" id="2If?pPXTSvH3Md9/2)(B">
+                    <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="XM7_27_e-zA`hQ;x?;`(">
+                    <field name="NUM">1693.73</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="R6!`/E]yi3P|6-?2g`]_">
+                <field name="OP">LTE</field>
+                <value name="A">
+                  <block type="variables_get" id="$Y_c];e+H*lTGxfpkeTq">
+                    <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="7pn!A_N)g!=[APOw8mcp">
+                    <field name="NUM">2822.9</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="variables_set" id="F8XH-|@6}BlOh!y~@wgE">
+            <field name="VAR" id="v[py$kxoP;APHo%8U|z_">inss</field>
+            <value name="VALUE">
+              <block type="math_number" id="%/{I4U?Tsbp(iuXcD#uD">
+                <field name="NUM">9</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <value name="IF2">
+          <block type="logic_operation" id="d83#(=M](|lN3V7q_8jK">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="-7FR5ItR9l%6!jn[pao:">
+                <field name="OP">GTE</field>
+                <value name="A">
+                  <block type="variables_get" id="rnD*zF@@=d:fJed=,WeR">
+                    <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="aR=qdjJ.ua6#b3@x?C:$">
+                    <field name="NUM">2822.91</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="`_qs*j_cv$}==NEmIE(Z">
+                <field name="OP">LTE</field>
+                <value name="A">
+                  <block type="variables_get" id="E(#qc3;^v~**DpM+TB*b">
+                    <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="fy$wRe[fb9Ox[[LpVAq;">
+                    <field name="NUM">5645.8</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO2">
+          <block type="variables_set" id="C40}`K%wRPx$Ztj8ZA-Y">
+            <field name="VAR" id="v[py$kxoP;APHo%8U|z_">inss</field>
+            <value name="VALUE">
+              <block type="math_number" id="r(%Jg^O*pUmku8d=M~gz">
+                <field name="NUM">11</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="text_print" id="RYk5*D9H.k0hzq%,[DEz">
+            <value name="TEXT">
+              <shadow type="text" id="SfY2m0m;$!^VEAa}ga6~">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text_join" id="yNH{s}40f169@Yk?ZX(9">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="gD3GOYg}L-vOoZ2WA]B4">
+                    <field name="TEXT">Desconto INSS: </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="math_arithmetic" id="]WD9v(T7(zDT+eY[z^@h">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id="4,Us]eFl2!*_iOb@4?2x">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="=PB27WPK~7}c+9n[RyD!">
+                        <field name="VAR" id="V1]JFQ}u2lILoK[r#K}e">bruto</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="7nJX(Ymf/wh*{DF:.wgy">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="l=8:*50Ark)Z+_s~1?HI">
+                        <field name="OP">DIVIDE</field>
+                        <value name="A">
+                          <shadow type="math_number" id="C4yr`]0L?3n%t0r}O!iN">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="Zqy5ga-(yw|d*3d-_/X-">
+                            <field name="VAR" id="v[py$kxoP;APHo%8U|z_">inss</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="*?drm25P4i.udnb9jVI:">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_number" id="6?+{$PqQpoqVl+vaL023">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

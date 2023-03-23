@@ -1,0 +1,159 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="F$dBu7%?Xu:bo)Iaa#J)">lista</variable>
+    <variable id="8qLor*yJ[n)%;ni^%pz,">sum</variable>
+    <variable id="!x%v3okiYTb}!m8:p4,B">i</variable>
+  </variables>
+  <block type="variables_set" id="r}c}7nm!rGKaxWG.Bv/V" x="-890" y="-350">
+    <field name="VAR" id="F$dBu7%?Xu:bo)Iaa#J)">lista</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="4x36#17:20,w5byC^E]+">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="+rZ?v@GB8GBg]D0#k!Zo">
+        <field name="VAR" id="8qLor*yJ[n)%;ni^%pz,">sum</field>
+        <value name="VALUE">
+          <block type="math_number" id="4nV[)L-AXqi|J=oe9=fR">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="(sB6#ARS7}]EOm-)5a$m">
+            <field name="VAR" id="!x%v3okiYTb}!m8:p4,B">i</field>
+            <value name="FROM">
+              <shadow type="math_number" id="n+#b~TLXA|[J%!_I@Rhr">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="math_number" id="(`h^P#U@(6[-Y/LFeaA0">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="9!T=VO){L,e0Nci`,+JE">
+                <field name="NUM">19</field>
+              </shadow>
+              <block type="math_number" id="EQ_%*aiJ^810`gsy:.89">
+                <field name="NUM">19</field>
+              </block>
+            </value>
+            <value name="BY">
+              <shadow type="math_number" id="cn65tM#/Irx+():(tjiH">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="lists_setIndex" id="JUEryG!sO!R-jB8!RkB%">
+                <mutation at="true"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">FROM_START</field>
+                <value name="LIST">
+                  <block type="variables_get" id="~en1a~@,Rp,oADpa%0_q">
+                    <field name="VAR" id="F$dBu7%?Xu:bo)Iaa#J)">lista</field>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="variables_get" id="@_5gq-nAl]b*$e#Vr48M">
+                    <field name="VAR" id="!x%v3okiYTb}!m8:p4,B">i</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="variables_get" id="^?+Ew)Q{:4lK5YC_2j06">
+                    <field name="VAR" id="!x%v3okiYTb}!m8:p4,B">i</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="!9Ok:S_S.DN-@@EKv11)">
+                    <field name="VAR" id="8qLor*yJ[n)%;ni^%pz,">sum</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="=7=*MNU#O+16)qD25a_@">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <shadow type="math_number" id="%1+jbhd56Y*}cQZKC.~V">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="[LL(m.IC$gGQ_puq{Hb-">
+                            <field name="VAR" id="!x%v3okiYTb}!m8:p4,B">i</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="r0k(/hZ~=2+4c#;dTI|O">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="?/6DIoD/WO(O!$4c;byL">
+                            <field name="VAR" id="8qLor*yJ[n)%;ni^%pz,">sum</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id="[m~wJKF0:R(Q`V0H`;}[">
+                        <value name="IF0">
+                          <block type="logic_compare" id="u$H:4l[7r2;gRU|/+D6:">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="variables_get" id="b%Ib%0@}a80R4^5q1a$a">
+                                <field name="VAR" id="!x%v3okiYTb}!m8:p4,B">i</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="g,7c6V0|ZW?%+)=I@K#I">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="text_print" id="c%7TsB`C$dp!40K*u`K]">
+                            <value name="TEXT">
+                              <shadow type="text">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block type="text_join" id="h*^c8VYA9K@QcPxDw6rb">
+                                <mutation items="3"></mutation>
+                                <value name="ADD0">
+                                  <block type="lists_split" id="Sp78xxhco;*pLJT(c=qr">
+                                    <mutation mode="JOIN"></mutation>
+                                    <field name="MODE">JOIN</field>
+                                    <value name="INPUT">
+                                      <block type="variables_get" id="8XsrtdtZZ~72fAk,NQ%m">
+                                        <field name="VAR" id="F$dBu7%?Xu:bo)Iaa#J)">lista</field>
+                                      </block>
+                                    </value>
+                                    <value name="DELIM">
+                                      <shadow type="text">
+                                        <field name="TEXT">+</field>
+                                      </shadow>
+                                      <block type="text" id="4dz2Mo.bvAWiW7WC=*yn">
+                                        <field name="TEXT">+</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id="Eo]A!-PiU?lG@qb`X8aX">
+                                    <field name="TEXT"> = </field>
+                                  </block>
+                                </value>
+                                <value name="ADD2">
+                                  <block type="variables_get" id="T:ee368G+Jpi|xi]$%mB">
+                                    <field name="VAR" id="8qLor*yJ[n)%;ni^%pz,">sum</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

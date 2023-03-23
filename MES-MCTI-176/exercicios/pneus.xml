@@ -1,0 +1,54 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="I5t;*qRDFHy8gQ?vE//}">n</variable>
+  </variables>
+  <block type="variables_set" id="~U_2gH_BSQ0aoIwe$}-W" x="210" y="-370">
+    <field name="VAR" id="I5t;*qRDFHy8gQ?vE//}">n</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id=")4YwQ]Ewod|qk5AJ)p0|">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="8CdO6dQMPu;DS1)63!8F">
+            <field name="TEXT">Insira a quantidade de carros: </field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="qQ;=l0|jM}N]ejThQ)wZ">
+        <value name="TEXT">
+          <shadow type="text" id="r=5s|z~z*+s0`;24iHdy">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_join" id="X}eiCI[IidrDoxZ%r2{G">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text" id="ut4z+2iD7D{$Nx}G2k*}">
+                <field name="TEXT">Total de pneus:  </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="math_arithmetic" id=".%GFXSB5`5I^!L_*-rM-">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="#j)u%jhagf.!)Bu[dv[K">
+                    <field name="NUM">5</field>
+                  </shadow>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="hR4qF@28x_eFZ^HFkYWd">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="#eh4dwE_*R5YS}fKUM6C">
+                    <field name="VAR" id="I5t;*qRDFHy8gQ?vE//}">n</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

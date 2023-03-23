@@ -1,0 +1,246 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=":Wg$Jp}h)3.qoWVG8U3~">n</variable>
+    <variable id="AV(@ET;PY{1g`VAG[Zlt">x</variable>
+  </variables>
+  <block type="procedures_defreturn" id=":;|,d)yf8--Fn1^#Ffe`" x="-1150" y="-490">
+    <mutation>
+      <arg name="n" varid=":Wg$Jp}h)3.qoWVG8U3~"></arg>
+    </mutation>
+    <field name="NAME">fatorial</field>
+    <comment pinned="false" h="80" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block type="procedures_ifreturn" id="~|J0Uijo/fDuUZ9Kq3)[">
+        <mutation value="1"></mutation>
+        <value name="CONDITION">
+          <block type="logic_compare" id="]YRj9F%EipPh6bu4RXgj">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="vUD1(JEV(n;.3CD_z1)2">
+                <field name="VAR" id=":Wg$Jp}h)3.qoWVG8U3~">n</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="7!r(o{O!Z5FD%O-9QYoR">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE">
+          <block type="math_number" id="?A)nqy@SHd|O.}Mfiss+">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="ssm0oT)KWMIUvFsPUMtm">
+        <field name="OP">MULTIPLY</field>
+        <value name="A">
+          <shadow type="math_number" id="Q$C`RxinxLbKp+T_Lw7n">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="!-ZM.IaZ-daDu#sZCkla">
+            <field name="VAR" id=":Wg$Jp}h)3.qoWVG8U3~">n</field>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="6LUyMl#nHY1.!Gm7=9(,">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="procedures_callreturn" id="#tvbs*yRiRvSE*ZTb=hd">
+            <mutation name="fatorial">
+              <arg name="n"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_arithmetic" id="+Hr#Rr3wn8U8Sem_$$2~">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="aZ*RR9tmLp;_U7O:}$V%">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="UVANy+Ab,FzVNT+06$N0">
+                    <field name="VAR" id=":Wg$Jp}h)3.qoWVG8U3~">n</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="aDAowR9RYo5/~zW)]Sa3">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_number" id="z1T6}V.[06!:]YRJ_`nm">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="q8j/|7D*!Neif.4EZB}," x="-470" y="-490">
+    <mutation>
+      <arg name="n" varid=":Wg$Jp}h)3.qoWVG8U3~"></arg>
+    </mutation>
+    <field name="NAME">potencia</field>
+    <comment pinned="false" h="80" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block type="procedures_ifreturn" id="}6jWyoW$PQrM;CBF2|v/">
+        <mutation value="1"></mutation>
+        <value name="CONDITION">
+          <block type="logic_compare" id="ImUReJ$VjH/(I;T;G~NP">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="~V2QXc$%CVC8X,,wR75o">
+                <field name="VAR" id=":Wg$Jp}h)3.qoWVG8U3~">n</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="hNGfnF+]DK!HL}xY9Oy!">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE">
+          <block type="math_number" id="oRa:{5ob!}%z=OX!W2rM">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="ne=4vd)2}luuqYNA=o_O">
+        <field name="OP">MULTIPLY</field>
+        <value name="A">
+          <shadow type="math_number" id="|dwVA%FL{RDnE[{Ddyw9">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_number" id="mZflh4Hs3|1T1mNMGx(~">
+            <field name="NUM">-1</field>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="gujGP0ofZZ]:8^eg8Li6">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="procedures_callreturn" id="rkE`N%CT@S/TB^e@DQ/G">
+            <mutation name="potencia">
+              <arg name="n"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_arithmetic" id="z)J*bcQ7SUQb0yqB5bDU">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="Mo5d~]S{O%Zpt|{_!!gY">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="Kz9:NBhPgk_}vaIub@GN">
+                    <field name="VAR" id=":Wg$Jp}h)3.qoWVG8U3~">n</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_number" id="ngl-E(YQ-eLz94+|zS20">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="variables_set" id="z1U,aV~U0fO[qg[j;~}F" x="-1150" y="-310">
+    <field name="VAR" id="AV(@ET;PY{1g`VAG[Zlt">x</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="MmQp(Eo!6#DpFM)q`D=(">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="NLb,[sRs(A?)]@q),M|5">
+            <field name="TEXT">Insira o valor de X</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="u-7t2u(5Pa=[Fd%2?EN/">
+        <value name="TEXT">
+          <shadow type="text" id="$O]@!.BhK/Pl;s;C9$*=">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="procedures_callreturn" id="6qPo{8(kI$9j]u^pknb.">
+            <mutation name="potencia">
+              <arg name="n"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="~-:,OH#G9_pILiDqZ5j-">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="math_arithmetic" id="yL0Mc=Y}jg0ntDYGMXVm" x="-910" y="-150">
+    <field name="OP">MINUS</field>
+    <value name="A">
+      <shadow type="math_number" id="icXTPlcvUHiM.3/}ZM1J">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number" id="eTQSh{9Voo:vNZ$^vyKI">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="procedures_callreturn" id="tcdwf?eva*?d,*8hZn:T">
+        <mutation name="fatorial">
+          <arg name="n"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_arithmetic" id="CJTPb=TSsF1?g2l=sI%i">
+            <field name="OP">MINUS</field>
+            <value name="A">
+              <shadow type="math_number" id="G^nnUU1CIl3j%WLg{L5{">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_arithmetic" id=":nohddKhy{AOtEkyN6p[">
+                <field name="OP">ADD</field>
+                <value name="A">
+                  <shadow type="math_number" id="d#(q~?yH^DP@Z==2v=,p">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_number" id="8Z5-Y#M3[6qpu_nl@G16">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="L.g|V[8=^LtUxQDWj4:q">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="#$Q(2hGbBeZWlZ|vP[I.">
+                    <field name="VAR" id=":Wg$Jp}h)3.qoWVG8U3~">n</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="F3R)Ey_n6`@c`:wp;Z*p">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_number" id="1adUJH)uyoGis.e.oL%3">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>

@@ -1,0 +1,59 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="GvW#mc2`kosWzu3gdolU">m</variable>
+  </variables>
+  <block type="variables_set" id="ne=RfCL-,D)$D{kC!@`R" x="270" y="-390">
+    <field name="VAR" id="GvW#mc2`kosWzu3gdolU">m</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id="z;Ud#/HLJrBE1472%I{u">
+        <mutation type="NUMBER"></mutation>
+        <field name="TYPE">NUMBER</field>
+        <value name="TEXT">
+          <shadow type="text" id="VPgAGh.V$o98)cT^?TIt">
+            <field name="TEXT">Insira a quantidade de habitantes: </field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="text_print" id="?B|%cCaQG@M-#3oEx!)r">
+        <value name="TEXT">
+          <shadow type="text" id="~i)1/WZ#VJ`;`Lf%]-[Y">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_join" id="z[l7^vScNG+rg#bDONnc">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text" id="gFcMeVxO{Tk%iBZ9!`nt">
+                <field name="TEXT">Devem existir: </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="math_arithmetic" id="3/?+/jX*w/24~I,/}Knq">
+                <field name="OP">DIVIDE</field>
+                <value name="A">
+                  <shadow type="math_number" id="e%V!Iu8L:w#]e@w_d)U/">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="iLf}6m14hBjbxjqT2e-K">
+                    <field name="VAR" id="GvW#mc2`kosWzu3gdolU">m</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="a4?p-EWAjWEw8fbaKx)`">
+                    <field name="NUM">2</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="Q#Em8dt[lAm{INtD,x?G">
+                <field name="TEXT"> mulheres.</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
