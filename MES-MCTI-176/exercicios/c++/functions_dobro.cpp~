@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int dobro(n) {
+  return 2 * n;
+}
+
+
+int main() {
+  int n;
+  cout << "Digite um numero inteiro" << endl;
+  cin << n;
+  cout << "O dobro de " << n << " e igual a " << dobro(n) << endl;
+  return 0;
+}

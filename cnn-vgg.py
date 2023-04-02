@@ -6,7 +6,11 @@ from keras.models import Model, Sequential, load_model
 from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Reshape, Dropout
 from keras.preprocessing.image import ImageDataGenerator
 from keras.applications.vgg16 import VGG16
-from keras.applications.resnet50 import ResNet50
+
+# from keras.applications.resnet50 import ResNet50
+from tensorflow.keras.applications.resnet50 import ResNet50
+
+
 from sklearn.metrics import confusion_matrix, classification_report
 import itertools
 import cv2

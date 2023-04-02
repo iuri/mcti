@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class polygon {
+  float width;
+  float height;
+
+public:
+  Polygon(float w, float h) {
+    this->width = w;
+    this->height = h;
+  }
+
+  float calcArea() {
+    return w*h;
+  }
+
+};
+
+int main(void) {
+  Polygon p(4,5);
+  cout << p.calcArea();
+
+  return 0;
+}

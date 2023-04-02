@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Dinossaur {
+
+};
+
+class Brontossaur {
+
+};
+
+
+class Pterodactile {
+
+};
+
+class Tiranossaur { 
+
+};
+
+
+int main() {
+  
+  return 0;
+}
